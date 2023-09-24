@@ -62,58 +62,58 @@ pd.DataFrame(data, index, columns)
 
 **columns**: This parameter is used to provide column names in the DataFrame. If the column name is not defined by default, it will take a value from 0 to n-1.
 
-**Method 1**: Create empty DataFrame.
-```python
-df = pd.DataFrame()
-```
-```text
-Empty DataFrame
-Columns: []
-Index: []
-```
-**Method 2**: Creating  DataFrame from `Lists`
-```python
-import pandas as pd
-data = [10,20,30,40,50,60]
-df = pd.DataFrame(data, columns=['Numbers'])
-df
-```
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Numbers</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>20</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>30</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>40</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>50</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>60</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+* **Method 1**: Create empty DataFrame.
+  ```python
+  df = pd.DataFrame()
+  ```
+  ```text
+  Empty DataFrame
+  Columns: []
+  Index: []
+  ```
+* **Method 2**: Creating  DataFrame from `Lists`
+  ```python
+  import pandas as pd
+  data = [10,20,30,40,50,60]
+  df = pd.DataFrame(data, columns=['Numbers'])
+  df
+  ```
+  <div>
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>Numbers</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>0</th>
+        <td>10</td>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>20</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>30</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>40</td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td>50</td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td>60</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
 
 **Method 3**: Creating Pandas DataFrame from `lists of lists`
 ```python
